@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo '<script> window.location.href = "client.php"; alert("Авторизация клиента успешна!");</script>';
+        echo '<script> window.location.href = "client.php"; alert("Авторизация пользователя успешна!");</script>';
     } else {
         $stmt = $conn->prepare($sqlAdm);
         $stmt->bind_param("ss", $user_email, $user_password);
