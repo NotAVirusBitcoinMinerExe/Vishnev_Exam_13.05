@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body class="mar56">
+	<div class="modal" aria-labelledby="registration" id="registration">
+		<form class="mar32" id="auth" method="post" action="registration.php" >
+			<section class="mar8">
+				<h2>Регистрация</h2>
+			</section>
+			<section class="mar8">
+			    <div class="tbInfo">
+			        <input type="text" placeholder="Фамилия" name="user_name_1" id="user_name_1" required autofocus pattern="[А-Яа-яЁё]{3,50}">
+			        <button type="info" onclick="alert('Введите фамилию кириллицей без пробелов')">i</button>
+			    </div>
+			    <div class="tbInfo">
+			        <input type="text" placeholder="Имя" name="user_name_2" id="user_name_2" required pattern="[А-Яа-яЁё]{3,50}">
+		            <button type="info" class="menu__buttons__button" onclick="alert('Введите имя кириллицей без пробелов')">i</button>
+		        </div>
+			    <div class="tbInfo">
+			        <input type="text" placeholder="Отчество" name="user_name_3" id="user_name_3" required pattern="[А-Яа-яЁё]{3,50}">
+			        <button type="info" class="menu__buttons__button" onclick="alert('Введите отчество кириллицей без пробелов')">i</button>
+			    </div>
+			    <input type="text" placeholder="Электропочта" name="user_email" id="user_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			    <input type="password" placeholder="Пароль" name="user_password" id="user_password" required>
+			    <input type="password" placeholder="Пароль ещё раз" name="user_repassword" id="user_repassword" required>
+			    <input type="text" placeholder="Промокод" name="user_role" id="user_role">
+			</section>
+			<section class="mar8">
+				<a href="index.html">
+					Авторизация
+				</a>
+	            <button class="max_btn" type="submit">
+	                Зарегистрироваться
+	            </button>
+			</section>
+		</form>
+	</div>
+</form>
+</div>
+</body>
+</html>

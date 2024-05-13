@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторизация</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body class="mar56">
+	<div class="modal" id="authorization">
+		<form class="mar32" id="auth" method="post" action="authorization.php" >
+			<section class="mar8">
+				<h2>Авторизация</h2>
+			</section>
+			<section class="mar8">
+			    <input type="text" placeholder="Электропочта" name="user_email" id="user_email" required autofocus pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+			    <input type="password" placeholder="Пароль" name="user_password" id="user_password" required>
+			</section>
+			<section class="mar8">
+				<a href="register.html">
+					Регистрация
+				</a>
+	            <button class="max_btn" type="submit">
+	                Войти
+	            </button>
+			</section>
+		</form>
+	</div>
+</form>
+</div>
+</body>
+</html>
